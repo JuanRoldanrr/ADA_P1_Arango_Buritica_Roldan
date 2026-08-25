@@ -1,4 +1,4 @@
-// verificar_semilla.cpp
+
 #include <algorithm>
 #include <iostream>
 #include <string>
