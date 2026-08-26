@@ -1,0 +1,5 @@
+/Users/vivi/Downloads/ADA_P1_Arango_Buritica_Roldan/build/CMakeFiles/ada_p1.dir
+/Users/vivi/Downloads/ADA_P1_Arango_Buritica_Roldan/build/CMakeFiles/bt_tests.dir
+/Users/vivi/Downloads/ADA_P1_Arango_Buritica_Roldan/build/CMakeFiles/verificar_semilla.dir
+/Users/vivi/Downloads/ADA_P1_Arango_Buritica_Roldan/build/CMakeFiles/edit_cache.dir
+/Users/vivi/Downloads/ADA_P1_Arango_Buritica_Roldan/build/CMakeFiles/rebuild_cache.dir

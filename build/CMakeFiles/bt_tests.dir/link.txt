@@ -1,0 +1,1 @@
+/usr/bin/c++  -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/bt_tests.dir/tests/bt_tests.cpp.o CMakeFiles/bt_tests.dir/src/bt_backtracking.cpp.o CMakeFiles/bt_tests.dir/src/bt_sin_poda.cpp.o -o bt_tests
