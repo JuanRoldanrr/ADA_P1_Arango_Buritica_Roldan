@@ -3,27 +3,33 @@
 #include <fstream>
 #include <iostream>
 
-// Algoritmo de Fuerza Bruta Pura (DFS)
-ResultadoFB FuerzaBruta(const std::string& hash_objetivo,
-                        const std::string& alfabeto,
-                        int longitud) {
+ResultadoFB FuerzaBruta(const std::string& hash_objetivo, const std::string& alfabeto, int longitud) {
 
     std::string candidato(longitud, ' ');
     uint64_t evaluaciones = 0;
 
     auto Resolver = [&](auto& self, int posicion) -> bool {
         if (posicion == longitud) {
-            evaluaciones++;
-            std::string hash_candidato = picosha2::hash256_hex_string(candidato);
-            return hash_candidato == hash_objetivo;
+            evaluaciones = evaluaciones + 1;
+
+            std::string hash_candidato =
+                picosha2::hash256_hex_string(candidato);
+
+            if (hash_candidato == hash_objetivo) {
+                return true;
+            }
+
+            return false;
         }
 
         for (char ch : alfabeto) {
             candidato[posicion] = ch;
+
             if (self(self, posicion + 1)) {
                 return true;
             }
         }
+
         return false;
     };
 
@@ -36,12 +42,9 @@ ResultadoFB FuerzaBruta(const std::string& hash_objetivo,
     }
 }
 
-// Algoritmo de Ataque por Diccionario
-ResultadoFB AtaqueDiccionario(const std::string& hash_objetivo,
-                               const std::string& ruta_diccionario) {
+ResultadoFB AtaqueDiccionario(const std::string& hash_objetivo, const std::string& ruta_diccionario) {
     std::ifstream archivo(ruta_diccionario);
     if (!archivo.is_open()) {
-        std::cerr << "Error: No se pudo abrir el archivo de diccionario.\n";
         return {"NULO", 0, "ERROR_ARCHIVO"};
     }
 
