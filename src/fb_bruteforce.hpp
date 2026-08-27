@@ -11,6 +11,6 @@ struct ResultadoFB {
 };
 
 ResultadoFB FuerzaBruta(const std::string& hash_objetivo, const std::string& alfabeto, int longitud);
-ResultadoFB AtaqueDiccionario(const std::string& hash_objetivo,const std::string& ruta_diccionario);
+ResultadoFB AtaqueDiccionario(const std::string& hash_objetivo, const std::string& ruta_diccionario);
 
 #endif
