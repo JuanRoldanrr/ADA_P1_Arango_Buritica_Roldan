@@ -47,11 +47,14 @@ void ejecutarModulo() {
     // Mediciones Diccionario
     ResultadoFB res_dic = AtaqueDiccionario(hash_objetivo, "resources/diccionario.txt");
 
-    std::cout << "\n Fuerza Bruta \n";
-    std::cout << "Estado: " << res_fb.estado << "  Candidato: " << res_fb.candidato 
-              << " Evaluaciones: " << res_fb.evaluaciones << "  Tiempo: " << t_fb << " ms\n";
+    std::cout << "\nFuerza Bruta \n";
+    std::cout << "Estado: " << res_fb.estado;
+    std::cout << "Candidato: " << res_fb.candidato;
+    std::cout << "Evaluaciones: " << res_fb.evaluaciones;
+    std::cout << "Tiempo: " << t_fb << " ms\n";
 
     std::cout << "\n Diccionario \n";
-    std::cout << "Estado: " << res_dic.estado << " Candidato: " << res_dic.candidato 
-              << " Eval: " << res_dic.evaluaciones << "\n";
+    std::cout << "Estado: " << res_dic.estado;
+    std::cout << "Candidato: " << res_dic.candidato; 
+    std::cout << "Evaluaciones: " << res_dic.evaluaciones << "\n";
 }
