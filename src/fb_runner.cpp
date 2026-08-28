@@ -45,16 +45,16 @@ void ejecutarModulo() {
     double t_fb = std::chrono::duration<double, std::milli>(t1_fin - t1_inicio).count();
 
     // Mediciones Diccionario
-    ResultadoFB res_dic = AtaqueDiccionario(hash_objetivo, "resources/diccionario.txt");
+    ResultadoFB res_dic = AtaqueDiccionario(hash_objetivo, "../resources/diccionario.txt");
 
-    std::cout << "\nFuerza Bruta \n";
-    std::cout << "Estado: " << res_fb.estado;
-    std::cout << "Candidato: " << res_fb.candidato;
-    std::cout << "Evaluaciones: " << res_fb.evaluaciones;
-    std::cout << "Tiempo: " << t_fb << " ms\n";
+    std::cout << "\n Fuerza Bruta \n";
+    std::cout << " Estado: " << res_fb.estado;
+    std::cout << "\n Candidato: " << res_fb.candidato;
+    std::cout << "\n Evaluaciones: " << res_fb.evaluaciones;
+    std::cout << "\n Tiempo: " << t_fb << " ms\n";
 
     std::cout << "\n Diccionario \n";
-    std::cout << "Estado: " << res_dic.estado;
-    std::cout << "Candidato: " << res_dic.candidato; 
-    std::cout << "Evaluaciones: " << res_dic.evaluaciones << "\n";
+    std::cout << " Estado: " << res_dic.estado;
+    std::cout << "\n Candidato: " << res_dic.candidato;
+    std::cout << "\n Evaluaciones: " << res_dic.evaluaciones << "\n";
 }
