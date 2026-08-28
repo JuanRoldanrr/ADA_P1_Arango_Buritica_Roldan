@@ -1,0 +1,7 @@
+metodo,alfabeto,longitud,hash_objetivo,clave_encontrada,evaluaciones,tiempo_ms,estado
+FuerzaBruta,A1,4,hash_ejemplo_1,ijax,146716,1196.51,ENCONTRADA
+Diccionario,A1,4,hash_ejemplo_1,NULO,500,0.85,NO_ENCONTRADA
+FuerzaBruta,A2,4,hash_ejemplo_2,ans9,17532,131.66,ENCONTRADA
+Diccionario,A2,4,hash_ejemplo_2,NULO,500,0.82,NO_ENCONTRADA
+FuerzaBruta,A1,5,hash_ejemplo_3,uxyby,9560043,72183.80,ENCONTRADA
+Diccionario,A1,5,hash_ejemplo_3,NULO,500,0.89,NO_ENCONTRADA
