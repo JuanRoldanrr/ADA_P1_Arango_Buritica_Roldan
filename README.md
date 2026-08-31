@@ -161,6 +161,7 @@ Las pruebas verifican:
 - Búsqueda con A2
 - Ataque de diccionario exitoso
 - Ataque de diccionario fallido
+- Diccionario oficial: Si las claves fueron encontradas
 - Archivo de diccionario inexistente
 - Conteo de evaluaciones.
 
