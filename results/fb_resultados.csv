@@ -1,12 +1,12 @@
-prueba,instancia,clave,alfabeto,longitud_n,candidatos_fb,tiempo_fb_ms,candidatos_diccionario,tiempo_diccionario_ms,estado_fb,estado_diccionario
-Prueba 1,objetivo_1,ijax,A1,4,146716,1196.51,28,,ENCONTRADA,ENCONTRADA
-Prueba 1,objetivo_2,ans9,A2,4,17532,131.66,204,,ENCONTRADA,ENCONTRADA
-Prueba 1,objetivo_3,uxyby,A1,5,9560043,72183.8,227,,ENCONTRADA,ENCONTRADA
-Prueba 1,objetivo_4,r0la7,A2,5,29780818,223951.0,389,,ENCONTRADA,ENCONTRADA
-Prueba 1,objetivo_5,wpctwv,A1,6,268293502,1360000.0,337,,ENCONTRADA,ENCONTRADA
-Prueba 2,objetivo_1,ijax,A1,4,146716,660.302,28,,ENCONTRADA,ENCONTRADA
-Prueba 2,objetivo_2,ans9,A2,4,17532,85.648,204,,ENCONTRADA,ENCONTRADA
-Prueba 2,objetivo_3,uxyby,A1,5,9560043,44015.7,227,,ENCONTRADA,ENCONTRADA
-Prueba 2,objetivo_4,r0la7,A2,5,29780818,137123.0,389,,ENCONTRADA,ENCONTRADA
-Prueba 2,objetivo_5,wpctwv,A1,6,268293502,1248450.0,337,,ENCONTRADA,ENCONTRADA
-Referencia,referencia,abc12,A2,5,50249,236.825,500,,ENCONTRADA,NO ENCONTRADA
+prueba,instancia,tipo,clave,alfabeto,longitud_n,candidatos_fb,tiempo_fb_ms,candidatos_diccionario,tiempo_diccionario_ms,estado_fb,estado_diccionario
+Prueba 1,objetivo_1,equipo,ijax,A1,4,146716,1196.51,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 1,objetivo_2,equipo,ans9,A2,4,17532,131.66,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 1,objetivo_3,equipo,uxyby,A1,5,9560043,72183.8,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 1,objetivo_4,equipo,r0la7,A2,5,29780818,223951.0,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 1,objetivo_5,equipo,wpctwv,A1,6,268293502,1360000.0,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 2,objetivo_1,equipo,ijax,A1,4,146716,660.302,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 2,objetivo_2,equipo,ans9,A2,4,17532,85.648,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 2,objetivo_3,equipo,uxyby,A1,5,9560043,44015.7,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 2,objetivo_4,equipo,r0la7,A2,5,29780818,137123.0,500,,ENCONTRADA,NO ENCONTRADA
+Prueba 2,objetivo_5,equipo,wpctwv,A1,6,268293502,1248450.0,500,,ENCONTRADA,NO ENCONTRADA
+Referencia,referencia,oficial,abc12,A2,5,50249,236.825,500,,ENCONTRADA,NO ENCONTRADA

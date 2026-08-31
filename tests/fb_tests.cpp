@@ -166,6 +166,45 @@ void probarEvaluaciones() {
         << "[PASS] Conteo de evaluaciones\n";
 }
 
+// test 8: Ninguna de las claves de las pruebas aparece en el diccionario oficial
+void probarDiccionarioOficial() {
+    const std::string ruta =
+        "resources/diccionario.txt";
+
+    const std::string hashes[] = {
+        // abc12 - referencia
+        "8d51feb34e3e69f6fa6dffc577e2c60490cf9a7fcd835f9f6af1505b71d74773",
+
+        // ijax
+        "c56d1270821c92b3205d36e89d1fb0fd0bad3b9f2862242d6b2a5a3392a6b499",
+
+        // ans9
+        "b55df863e210fa4784207934f751b2342a6f1f59f63c5f0fabbca7a9f9fba7fa",
+
+        // uxyby
+        "3d703d21cf2e0792a465caf7e59b6e80b65fe53d90cea94fab66e40ebf663242",
+
+        // r0la7
+        "199d6d898dfc43886d05ba5540f3da1e42d56c66327de37f67fc981889962c1d",
+
+        // wpctwv
+        "1bc54ae0767a4dba59cb26bb16c4148d058d9a0d7b628340576f4c054432b96d"
+    };
+
+    for (const std::string& hash : hashes) {
+        ResultadoFB res =
+            AtaqueDiccionario(hash, ruta);
+
+        assert(res.estado == "NO ENCONTRADA");
+        assert(res.candidato == "NULO");
+        assert(res.evaluaciones == 500);
+    }
+
+    std::cout
+        << "[PASS] Diccionario oficial: "
+        << "ninguna de las claves fue encontrada\n";
+}
+
 int main() {
 
     std::cout
@@ -178,6 +217,7 @@ int main() {
     probarDiccionarioExitoso();
     probarDiccionarioFallido();
     probarDiccionarioArchivoInexistente();
+    probarDiccionarioOficial();
 
     probarEvaluaciones();
 
